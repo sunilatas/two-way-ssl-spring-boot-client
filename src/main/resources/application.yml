@@ -13,3 +13,8 @@ server:
     key-store-password: "changeit"
     key-alias: "two-way-ssl-spring-boot-client"
     key-store-type: "JKS"
+    trust-store: "classpath:jks/client-truststore.jks"
+    trust-store-password: "changeit"
+    trust-store-type: "JKS"
+  gateway:
+    hello.url: "https://localhost:9002/two-way-ssl-server/api/v1/hello-server"

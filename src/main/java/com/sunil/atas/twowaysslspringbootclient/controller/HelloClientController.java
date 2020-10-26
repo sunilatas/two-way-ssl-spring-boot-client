@@ -15,6 +15,6 @@ public class HelloClientController {
 
     @GetMapping(value = "/hello-client")
     public String hello() {
-        return helloService.hello();
+        return helloService.hello().getValue();
     }
 }
